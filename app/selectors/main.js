@@ -1,5 +1,1 @@
-export default (state, action) => {
-  switch (action.type) {
-
-  }
-}
+export const getGoods = (state) => state.getIn(['main', 'goods']);
