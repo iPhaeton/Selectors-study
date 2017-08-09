@@ -14,8 +14,11 @@ class GoodsList extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  goods: getGoods(state),
-})
+const mapStateToProps = (state) => {
+  console.log('GoodsList mapStateToProps');
+  return {
+    goods: getGoods(state),
+  };
+}
 
 export default connect(mapStateToProps, null)(GoodsList);
