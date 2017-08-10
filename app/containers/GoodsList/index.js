@@ -1,10 +1,14 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
 import {getGoods} from 'selectors/main';
-import {setGoods} from 'actions';
+import {setGoods, count} from 'actions';
 import {bindActionCreators} from 'redux';
 
 class GoodsList extends React.Component {
+  componentDidUpdate = (prevProps, prevState) => {
+    this.props.count();
+  }
+
   render () {
     console.log('GoodsList render', this.props.goods.toJS());
     return (
@@ -27,6 +31,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   setGoods,
+  count,
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(GoodsList);

@@ -1,4 +1,4 @@
-import {SET_GOODS, SET_SORTED} from 'constants/index';
+import {SET_GOODS, SET_SORTED, COUNT} from 'constants/index';
 import {fromJS} from 'immutable';
 
 const initialState = fromJS({
@@ -21,6 +21,7 @@ const initialState = fromJS({
     }
   ],
   sorted: false,
+  count: 0,
 });
 
 let prevState = initialState;
@@ -39,7 +40,11 @@ export default (state = initialState, action) => {
       prevState = newState;
       return newState;
     }
-    default:
+    case COUNT: {
+      return state.set('count', state.get('count') + 1);
+    }
+    default: {
       return initialState;
+    }
   }
 }
