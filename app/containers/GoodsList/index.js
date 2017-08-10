@@ -4,6 +4,7 @@ import {getGoods} from 'selectors/main';
 
 class GoodsList extends React.Component {
   render () {
+    console.log('GoodsList render');
     return (
       <div>
         <ul>
