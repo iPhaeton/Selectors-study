@@ -5,10 +5,6 @@ import {setGoods, count} from 'actions';
 import {bindActionCreators} from 'redux';
 
 class GoodsList extends React.Component {
-  componentDidUpdate = (prevProps, prevState) => {
-    this.props.count();
-  }
-
   render () {
     console.log('GoodsList render', this.props.goods.toJS());
     return (
