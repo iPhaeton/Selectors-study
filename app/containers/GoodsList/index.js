@@ -6,7 +6,7 @@ import {bindActionCreators} from 'redux';
 
 class GoodsList extends React.Component {
   componentWillReceiveProps = (nextProps) => {
-    //this.props.count();
+    this.props.count();
   }
 
   render () {
