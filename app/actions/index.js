@@ -1,11 +1,4 @@
-import {SET_GOODS, SET_SORTED, COUNT} from 'constants/index';
-
-export function setGoods (goods) {
-  return {
-    type: SET_GOODS,
-    goods,
-  }
-}
+import {SET_SORTED, COUNT} from 'constants/index';
 
 export function setSorted(sorted) {
   return {

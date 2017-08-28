@@ -26,9 +26,6 @@ const initialState = fromJS({
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SET_GOODS: {
-      return state.set('goods', action.goods);
-    }
     case SET_SORTED: {
       return state.set('sorted', action.sorted);
     }
