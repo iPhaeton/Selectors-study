@@ -24,21 +24,13 @@ const initialState = fromJS({
   count: 0,
 });
 
-let prevState = initialState;
-
 export default (state = initialState, action) => {
   switch (action.type) {
     case SET_GOODS: {
-      const newState = state.set('goods', action.goods);
-      console.log('SET_GOODS', prevState === newState);
-      prevState = newState;
-      return newState;
+      return state.set('goods', action.goods);
     }
     case SET_SORTED: {
-      const newState = state.set('sorted', action.sorted);
-      console.log('SET_SORTED', prevState === newState);
-      prevState = newState;
-      return newState;
+      return state.set('sorted', action.sorted);
     }
     case COUNT: {
       return state.set('count', state.get('count') + 1);
