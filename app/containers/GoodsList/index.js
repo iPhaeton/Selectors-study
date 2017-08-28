@@ -5,7 +5,7 @@ import {count} from 'actions';
 import {bindActionCreators} from 'redux';
 
 class GoodsList extends React.Component {
-  componentDidUpdate = (prevProps, prevState) => {
+  componentWillReceiveProps = (nextProps) => {
     //this.props.count();
   }
 
