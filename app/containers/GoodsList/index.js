@@ -10,11 +10,11 @@ class GoodsList extends React.Component {
   }
 
   render () {
-    console.log('GoodsList render', this.props.goods.toJS());
+    console.log('GoodsList render', this.props.goods);
     return (
       <div>
         <ul>
-          {this.props.goods.map((g, i) => <li key={i}>{`${g.get('name')} - ${g.get('price')}$`}</li>)}
+          {this.props.goods.map((g, i) => <li key={i}>{`${g.name} - ${g.price}$`}</li>)}
         </ul>
       </div>
     )
