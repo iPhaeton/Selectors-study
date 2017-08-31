@@ -14,5 +14,5 @@ unmemoized - to show caveats of using unmemoized selectors in a React-Redux appl
 Run `git checkout <branch>` to switch between the branches.
 
 To start the project run   
-`npm install` or `yarn install`  
+`yarn install`  
 `npm start`  
