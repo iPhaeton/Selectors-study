@@ -6,6 +6,7 @@ import {bindActionCreators} from 'redux';
 
 class GoodsList extends React.Component {
   componentWillReceiveProps = (nextProps) => {
+    //will cause an endless cycle
     //this.props.count();
   }
 
