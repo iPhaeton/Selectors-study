@@ -6,9 +6,9 @@ To clone the project run
 `cd Selectors-study/`  
 `git fetch --all`
 
-There are three branches in the project:
-memoized - to show correct usage of a Reselect selector
-memoized-worng - to show incorrect usage of a Reselect selector which breakes memoization ability if the selector
+There are three branches in the project:  
+memoized - to show correct usage of a Reselect selector  
+memoized-worng - to show incorrect usage of a Reselect selector which breakes memoization ability if the selector  
 unmemoized - to show caveats of using unmemoized selectors in a React-Redux application
 
 Run `git checkout <branch>` to switch between the branches.
